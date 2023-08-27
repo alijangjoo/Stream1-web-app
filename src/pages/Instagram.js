@@ -11,6 +11,7 @@ import Table from '../components/Common/Table'
 import countries from '../Data/countries'
 import Button from 'react-bootstrap/Button';
 import Login from "../components/Instagram/Login/Login";
+import {CARD_VIEW,GRID_VIEW} from '../components/Instagram/Accounts/instagram-account-constants'
 export const Index = () => {
     return (
         <div className="site-content">Instagram Index</div>
@@ -18,6 +19,7 @@ export const Index = () => {
 };
 
 export const Accounts = () => {
+    const[displayMode, setDisplayMode] = useState()
     return (
         <div className="site-content">
            <AccountGrid></AccountGrid>
